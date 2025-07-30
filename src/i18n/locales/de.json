@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Feminine Akademie",
+    "subtitle": "Erwecke deine Weiblichkeit",
+    "button": "Jetzt teilnehmen"
+  },
+  "form": {
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefonnummer",
+    "country": "Wohnsitzland",
+    "selectCountry": "Land auswählen",
+    "submit": "Absenden",
+    "errors": {
+      "required": "Dieses Feld ist erforderlich"
+    }
+  }
+}

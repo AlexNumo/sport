@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { DiscountProvider } from './contex/DiscountContext';
+import HeroSection from './Components/HeroSection';
+import AboutSection from './Components/AboutSection';
+import ForWhomSection from './Components/ForWhomSection';
+import ModulesSection from './Components/ModulesSection';
+import CallToAction from './Components/CallToAction';
+import Footer from './Components/Footer/Footer';
+import Timer from './Components/Timer/Timer';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DiscountProvider>
+        <HeroSection />
+        <Timer/>
+        <AboutSection />
+        <ForWhomSection />
+        <ModulesSection />
+        <CallToAction/>
+        <Footer/>
+      </DiscountProvider>
     </div>
   );
 }

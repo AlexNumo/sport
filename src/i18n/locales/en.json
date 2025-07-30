@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Feminine Academy",
+    "subtitle": "Awaken your inner woman",
+    "button": "Join Now"
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "country": "Country of Residence",
+    "selectCountry": "Select Country",
+    "submit": "Submit",
+    "errors": {
+      "required": "This field is required"
+    }
+  }
+}
