@@ -1,23 +1,28 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  padding: 80px 20px;
-  background-color: #fef2f2;
+  padding: 60px 20px;
+  background-color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Heading = styled.h2`
   font-size: 2.5rem;
   color: #c026d3;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `;
 
-const List = styled.ul`
+const Text = styled.p`
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
-  list-style: none;
-  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #444;
+  padding-bottom: 20px;
 `;
 
 const ListItem = styled.li`
@@ -36,4 +41,4 @@ const ListItem = styled.li`
   }
 `;
 
-export {Section, Heading, List, ListItem}
+export {Section, Heading, Text, ListItem}

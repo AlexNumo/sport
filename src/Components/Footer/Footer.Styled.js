@@ -8,8 +8,17 @@ const FooterWrapper = styled.footer`
   font-size: 0.9rem;
 `;
 
+const WrapperSocial = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & a{
+    margin: 10px 20px;
+  }
+`;
+
 const FooterText = styled.p`
   margin: 0;
 `;
 
-export {FooterWrapper, FooterText}
+export {FooterWrapper, FooterText, WrapperSocial}

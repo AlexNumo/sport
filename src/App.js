@@ -1,11 +1,13 @@
 import { DiscountProvider } from './contex/DiscountContext';
 import HeroSection from './Components/HeroSection';
-import AboutSection from './Components/AboutSection';
-import ForWhomSection from './Components/ForWhomSection';
+import AboutCourse from './Components/AboutCourse';
+// import PlusesCurs from './Components/PlusesCurs';
 import ModulesSection from './Components/ModulesSection';
 import CallToAction from './Components/CallToAction';
 import Footer from './Components/Footer/Footer';
 import Timer from './Components/Timer/Timer';
+// import ListPluses from './Components/ListPluses';
+// import ForYou from './Components/ForYou';
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
       <DiscountProvider>
         <HeroSection />
         <Timer/>
-        <AboutSection />
-        <ForWhomSection />
+        <AboutCourse />
+        {/* <PlusesCurs /> */}
+        {/* <ListPluses /> */}
+        {/* <ForYou/> */}
         <ModulesSection />
         <CallToAction/>
         <Footer/>
