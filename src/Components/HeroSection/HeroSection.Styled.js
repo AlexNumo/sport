@@ -31,7 +31,10 @@ const DiscountBadge = styled.div`
 
 
 const Hero = styled.section`
-  background-color: #ffe4e6;
+  /* background-color: #ffffff; */
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   padding: 30px 20px;
   text-align: center;
 `;
@@ -42,22 +45,37 @@ const WrapperLang = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #c026d3;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 14px 24px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 40px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  background-color: rgba(255, 255, 255, 0.4); /* білий фон з прозорістю 40% */
+  border: 2px solid #e9d5ff;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 `;
+
 
 const Subtitle = styled.p`
   font-size: 1.25rem;
   margin-bottom: 40px;
-`;
-
-const HeroImage = styled.img`
-  max-width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 14px 24px;
+  margin-top: 20px;
+  border-radius: 40px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  background-color: rgba(248, 234, 234, 0.4); /* білий фон з прозорістю 40% */
+  border: 0px solid #e9d5ff;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 `;
 
 const ButtonContainer = styled.div`
@@ -86,4 +104,4 @@ const Button = styled.a`
   }
 `;
 
-export {DiscountBadge, Hero, WrapperLang, Title, Subtitle, HeroImage, ButtonContainer, Button}
+export {DiscountBadge, Hero, WrapperLang, Title, Subtitle, ButtonContainer, Button}

@@ -6,9 +6,13 @@ const SaleBTN = ({ setModalOpen, nameBTN }) => {
   const { t } = useTranslation();
   const { isDiscountActive } = useDiscount();
   // console.log(nameBTN)
+
   return (
     <ButtonContainer>
-      <Button onClick={() => setModalOpen(true)}>
+      <Button
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        onClick={() => setModalOpen(true)}>
         {nameBTN ? nameBTN : t('hero.button') }
       </Button>
       {isDiscountActive && <DiscountBadge>-80%</DiscountBadge>}

@@ -7,7 +7,7 @@ const Timer = () => {
   const { t } = useTranslation();
   const { setIsDiscountActive } = useDiscount();
   
-  const deadline = new Date('2025-07-30T23:59:59');
+  const deadline = new Date('2025-08-24T23:59:59');
 
   const pluralize = (number, forms) => {
     const n = Math.abs(number) % 100;

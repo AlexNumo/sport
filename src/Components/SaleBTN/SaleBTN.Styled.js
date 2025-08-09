@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { motion } from 'framer-motion';
 
 const pulse = keyframes`
   0% { transform: scale(0.8); }
@@ -16,8 +17,8 @@ const colorShift = keyframes`
 
 const DiscountBadge = styled.div`
   position: absolute;
-  top: -20px;
-  right: 50px;
+  top: -30px;
+  right: 20px;
   color: black;
   font-weight: bold;
   padding: 15px 11px;
@@ -41,7 +42,7 @@ const ButtonContainer = styled.div`
   margin: 0 auto;
 `;
 
-const Button = styled.a`
+const Button = styled(motion.div)`
   background-color: #db2777;
   color: white;
   padding: 14px 32px;
@@ -49,9 +50,18 @@ const Button = styled.a`
   font-size: 1rem;
   text-decoration: none;
   transition: 0.3s ease;
+  box-shadow: 0 4px 0 #a61b55;
 
   &:hover {
     background-color: #be185d;
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #a61b55;
+  }
+  &:focus{
+    box-shadow: 0 2px 0 #a61b55;
+    border: 0px solid #ffffff;
+    transform: translateY(2px);
   }
 `;
 

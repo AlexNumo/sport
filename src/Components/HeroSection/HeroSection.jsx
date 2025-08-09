@@ -8,7 +8,6 @@ import {
   WrapperLang,
   Title,
   Subtitle,
-  HeroImage,
 } from './HeroSection.Styled';
 import Photo1 from '../../assets/DE0A7779.jpg';
 import SaleBTN from '../SaleBTN/SaleBTN';
@@ -25,7 +24,6 @@ const HeroSection = () => {
       </WrapperLang>
       <Title>{t('hero.title')}</Title>
       <Subtitle>{t('hero.subtitle')}</Subtitle>
-      <HeroImage src={Photo1} alt="Hero" />
       <SaleBTN setModalOpen={ setModalOpen} />
       {/* <ButtonContainer>
         <Button onClick={() => setModalOpen(true)}>{t('hero.button')}</Button>
